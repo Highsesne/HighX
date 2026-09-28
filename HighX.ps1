@@ -1,6 +1,6 @@
 #Requires -Version 5.1
 # =============================================================================
-#  HIGHSENSE  -  Premium Launcher UI  (blank shell / landing screen)
+#  HighX  -  Premium Launcher UI  (blank shell / landing screen)
 #  A clean, dark, rounded-corner window. This is the front page the user sees
 #  first; later a button will be added here to enter the main program.
 # =============================================================================
@@ -26,7 +26,7 @@ $W = 520
 $H = 760
 
 $form = New-Object System.Windows.Forms.Form
-$form.Text = 'HIGHSENSE'
+$form.Text = 'HighX'
 $form.FormBorderStyle = [System.Windows.Forms.FormBorderStyle]::None
 $form.StartPosition = [System.Windows.Forms.FormStartPosition]::CenterScreen
 $form.ClientSize = New-Object System.Drawing.Size($W, $H)
@@ -79,7 +79,7 @@ $form.Add_Paint({
     $logoFont = New-Object System.Drawing.Font('Segoe UI', 34, [System.Drawing.FontStyle]::Bold)
     $white = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(238, 240, 245))
     $logoRect = New-Object System.Drawing.RectangleF(0, ($H / 2 - 70), $W, 60)
-    $g.DrawString('H I G H S E N S E', $logoFont, $white, $logoRect, $sf)
+    $g.DrawString('H I G H X', $logoFont, $white, $logoRect, $sf)
     $logoFont.Dispose()
 
     # subtitle
